@@ -1,4 +1,6 @@
+#include <iostream>
 #include "matrix.h"
+using namespace std;
 
 double **allocate(int row, int col) {
     double **matrix = new double* [row];

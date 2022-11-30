@@ -1,4 +1,6 @@
+#include <iostream>
 #include "vector.h"
+using namespace std;
 
 double *allocate(int size_v) {
     double *vector = new double [size_v];
@@ -11,13 +13,13 @@ void random(double *vect, int size) {
     }
 }
 
-void zeros(double *vect, int size){
+void zeros(double *vect, int size) {
     for (int i = 0; i < size; i++) {
         vect[i] = 0;
     }
 }
 
-void print(double *vect, int size); {
+void print(double *vect, int size) {
     for (int i = 0; i < size; i++) {
         cout << vect[i] << " ";
     }
