@@ -25,11 +25,12 @@ int main() {
     cout << "Input row and column of A:" << endl;
     cin >> numRows_A >> numCols_A;
     cout << "Input row and column of B:" << endl;
-    cin >> numRows_A >> numCols_B;
+    cin >> numRows_B >> numCols_B;
     cout << "Input row and column of C:" << endl;
-    cin >> numRows_A >> numCols_C;
+    cin >> numRows_C >> numCols_C;
     cout << "Input row and column of D:" << endl;
-    cin >> numRows_A >> numCols_D;
+    cin >> numRows_D >> numCols_D;
+    cout << endl;
     /*------------------Action--------------------*/
     //Allocation
     v = allocate(size_v);
@@ -47,11 +48,17 @@ int main() {
     zeros(D, numRows_D, numCols_D);
     //Linear algebra
     //Print results
+    cout << "Vector v is: "<<endl;
     print(v, size_v);
+    cout << "Vector w is: "<<endl;
     print(w, size_w);
+    cout << "Matrix A is: "<<endl;
     print(A, numRows_A, numCols_A);
+    cout << "Matrix B is: "<<endl;
     print(B, numRows_B, numCols_B);
+    cout << "Matrix C is: "<<endl;
     print(C, numRows_C, numCols_C);
+    cout << "Matrix D is: "<<endl;
     print(D, numRows_D, numCols_D);
     //Deallocation
     deallocate(v);

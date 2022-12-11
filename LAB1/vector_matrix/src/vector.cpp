@@ -1,11 +1,11 @@
 #include "vector.h"
 
-double *allocate(int size_v) {
+double *allocate(int size_v){
     double *vector = new double [size_v];
     return vector;
 }
 
-void random(double *vect, int size) {
+void random(double *vect, int size){
     for (int i = 0; i < size; i++) {
         vect[i] = i*i;
     }
@@ -17,14 +17,15 @@ void zeros(double *vect, int size){
     }
 }
 
-void print(double *vect, int size); {
+void print(double *vect, int size){
     for (int i = 0; i < size; i++) {
         cout << vect[i] << " ";
     }
     cout << endl;
+    cout << endl;
 }
 
-void deallocate(double *vect) {
+void deallocate(double *vect){
     delete [] vect;
     vect = nullptr;
 }

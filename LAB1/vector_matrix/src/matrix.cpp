@@ -1,6 +1,4 @@
-#include <iostream>
 #include "matrix.h"
-using namespace std;
 
 double **allocate(int row, int col) {
     double **matrix = new double* [row];
@@ -12,14 +10,14 @@ double **allocate(int row, int col) {
 
 void random(double **matrix, int row, int col) {
     for (int i = 0; i < row; i++) {
-        for (int j; j < col; j++)
+        for (int j = 0; j < col; j++)
         matrix[i][j] = i*j;
     }
 }
 
 void zeros(double **matrix, int row, int col) {
     for (int i = 0; i < row; i++) {
-        for (int j; j < col; j++)
+        for (int j = 0; j < col; j++)
         matrix[i][j] = 0;
     }
 }
@@ -31,6 +29,7 @@ void print(double **matrix, int row, int col) {
         }
         cout << endl;
     }
+    cout << endl;
     cout << endl;
 }
 

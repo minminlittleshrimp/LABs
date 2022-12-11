@@ -1,5 +1,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
+#include <iostream>
+using namespace std;
 
 double **allocate(int r, int c);
 void random(double **matrix, int row, int col);
