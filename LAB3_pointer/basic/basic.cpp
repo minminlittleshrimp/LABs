@@ -75,6 +75,16 @@ void level1_6 () {
 }
 
 void level2_1 () {
+    int a;
+    cin >> a;
+    int fact = 1;
+    int *pointer = &fact;
+   
+    for (int i=1; i<=a; i++) {
+        fact = fact*i;
+ 
+    }
+    cout << *pointer << endl;
 
 };
 void level2_2 () {
@@ -87,8 +97,8 @@ int main () {
     //level1_3();
     //level1_4();
     //level1_5();
-    level1_6();
-    //level2_1();
+    //level1_6();
+    level2_1();
     //level2_2();
     return 0;
 }
