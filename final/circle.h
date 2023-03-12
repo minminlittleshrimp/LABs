@@ -42,6 +42,4 @@ void Circle<T>::setCoord(T x, T y){
     cy = y;
 }
 
-template class Circle<double>;
-
 #endif

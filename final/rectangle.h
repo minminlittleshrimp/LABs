@@ -43,6 +43,4 @@ void Rectangle<T>::setCoord(T x, T y){
     ry = y;
 }
 
-template class Rectangle<double>;
-
 #endif

@@ -4,7 +4,6 @@
 #include "triangle.h"
 #include "circle.h"
 
-
 int main(){
     // rw: rectangle width, rh: rectangle height
     // bottom-left point coordinate: (rx, ry)

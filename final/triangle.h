@@ -43,6 +43,4 @@ void Triangle<T>::setCoord(T x, T y){
     ty = y;
 }
 
-template class Triangle<double>;
-
 #endif
